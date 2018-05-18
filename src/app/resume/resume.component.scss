@@ -1,0 +1,18 @@
+$break-small: 320px;
+$break-med: 768px;
+$break-large: 1200px;
+
+#resumeContainer {
+  margin: auto;
+
+    @media screen and (min-width: 769px){
+    border: 1px solid white;
+    padding: 10px 10px;
+    width: 90%;
+    }
+    @media screen and (min-width: $break-large){
+    border: 1px solid white;
+    padding: 10px 10px;
+    width: 60%;
+    }
+}

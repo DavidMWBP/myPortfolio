@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,700">
+
+<header>
+  <app-header></app-header>
+</header>
+
+<div class="contentWrapper">
+  <div id="main" [@routeAnimation]="prepRouteState(routerOutlet)">
+    <router-outlet #routerOutlet="outlet"></router-outlet>
+  </div>
+</div>
+
+<footer>
+    <app-footer></app-footer>
+</footer>

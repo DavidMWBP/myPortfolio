@@ -1,0 +1,29 @@
+$break-small: 320px;
+$break-med: 768px;
+$break-large: 1200px;
+
+#projectsContainer {
+    width: 100%;
+    
+    @media screen and (min-width: $break-large) {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+#portfolioProject {
+    margin-bottom: 20px;
+    @media screen and (min-width: $break-med) {
+        padding: 30px;
+        border: 1px solid white;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+h5 {
+    font-weight: 700;
+}
