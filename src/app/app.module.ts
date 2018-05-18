@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -28,6 +30,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NgbModule.forRoot(),
     AppRoutingModule,
     ServiceWorkerModule.register('https://davidmwbp.github.io/myPortfolio/ngsw-worker.js', { enabled: environment.production })
   ],
